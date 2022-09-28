@@ -1,0 +1,6 @@
+#!/bin/bash 
+
+#bat="$(acpi | awk '{print $4}' | sed s/,//)"
+# brigh="$(acpi | brillo)"
+#echo "${bat} "
+echo `brillo | awk '{print int($1)}'`%
